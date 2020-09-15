@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-if word.scan(/^[aeiouAEIOU]/)
+if word.match(/^[aeiouAEIOU]/)
   true
 else
   false
@@ -15,7 +15,7 @@ text.scan(/\b\w{5}\b/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-if text.scan(/^[A-Z].*[?.!]$/)
+if text.match(/^[A-Z].*[?.!]$/)
   true
 else
   false
@@ -23,7 +23,7 @@ end
 end
 
 def valid_phone_number?(phone)
-if phone.scan(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/)
+if phone.match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/)
   true
 else
   false
