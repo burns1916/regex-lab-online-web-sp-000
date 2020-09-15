@@ -20,6 +20,6 @@ end
 
 def valid_phone_number?(phone)
   phone = valid_numbers
-  valid numbers.all? { |number| 
+  valid numbers.all? { |number|
 number.scan(/\d{3}-\d{3}-\d{4}/)}
 end
