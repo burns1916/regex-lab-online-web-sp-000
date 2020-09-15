@@ -18,12 +18,10 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 if text.scan(/^[A-Z].*[?.!]$/)
   true
 else
-false
+  false
 end
 end
 
 def valid_phone_number?(phone)
-  valid_numbers = phone
-  valid_numbers.all? { |number|
-number.scan(/\d{3}-\d{3}-\d{4}/)}
+phone.scan(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/)
 end
